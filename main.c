@@ -6,9 +6,19 @@ int main(void) {
     int x, y;
     printf("Enter x: ");
     scanf("%d", &x);
-
     printf("Enter y: ");
     scanf("%d", &y);
+
+    if (x < 0 || y < 0) {
+        printf("Enter x: ");
+        scanf("%d", &x);
+        printf("Enter y: ");
+        scanf("%d", &y);
+    }
+
+    if (x < 0 || y < 0) {
+        return 0;
+    }
 
     printf("%d", x + y);
 
