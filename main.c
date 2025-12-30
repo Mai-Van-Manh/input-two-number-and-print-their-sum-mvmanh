@@ -17,6 +17,7 @@ int main(void) {
     }
 
     if (x < 0 || y < 0) {
+        printf("invalid");
         return 0;
     }
 
